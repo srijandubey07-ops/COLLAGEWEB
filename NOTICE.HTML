@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SRMCEM — Notice</title>
+  <style>
+    :root{
+      --brand:#0b3d67;
+      --brand-2:#0d2239;
+      --accent:#f7b500;
+      --text:#1b1b1b;
+      --muted:#5a5a5a;
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,Helvetica,sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.6;
+    }
+
+    /* Top bar (simple) */
+    .topbar{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      padding:10px 16px;
+      border-bottom:1px solid #e7e8ee;
+      background:white;
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+    .topbar a{
+      text-decoration:none;
+      color:var(--brand-2);
+      font-weight:600;
+    }
+    .chip{
+      background:var(--accent);
+      color:#1a1a1a;
+      padding:6px 12px;
+      border-radius:999px;
+      font-weight:700;
+    }
+
+    /* Header */
+    header{
+      background: radial-gradient(1200px 300px at 50% 0%, #103d66 0, #0a2a4a 60%, #071d33 100%);
+      color:#fff;
+      padding:18px 16px 24px;
+    }
+    .brand{
+      max-width:1100px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+    .logo{
+      width:44px;height:44px;border-radius:50%;
+      background:#fff;
+      display:grid;place-items:center;
+      color:var(--brand);
+      font-weight:900;
+    }
+    .brand h1{
+      margin:0;
+      font-size:22px;
+      letter-spacing:.3px;
+    }
+    .brand small{opacity:.85}
+
+    /* Main */
+    main{
+      max-width:1100px;
+      margin:24px auto 80px;
+      padding:0 16px;
+    }
+    .notice-title{
+      display:flex;align-items:center;gap:10px;
+      font-size:38px;line-height:1.1;margin:12px 0 8px;
+      font-weight:800;color:#111;
+    }
+    .notice-title .bar{
+      width:6px;height:34px;border-radius:6px;background:#f1b400;
+    }
+    .lead{
+      color:var(--muted);
+      font-size:16px;
+      margin:10px 0 26px;
+    }
+
+    /* Paragraph block (the big text) */
+    .copy{
+      background:var(--card);
+      border:1px solid #eef0f6;
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow:0 4px 14px rgba(9,30,66,.06);
+    }
+    .copy p{margin:0 0 14px}
+    .copy p:last-child{margin:0}
+
+    /* Card list */
+    .card{
+      margin-top:22px;
+      background:var(--card);
+      border:1px solid #e9ecf4;
+      border-radius:var(--radius);
+      padding:22px;
+      display:flex;justify-content:space-between;
+      align-items:center;gap:16px;
+      box-shadow:0 6px 18px rgba(9,30,66,.05);
+    }
+    .card h2{
+      margin:0 0 6px;font-size:22px
+    }
+    .card p{margin:0;color:var(--muted)}
+    .btn{
+      appearance:none;border:0;cursor:pointer;
+      padding:12px 18px;border-radius:999px;
+      background:var(--accent);
+      font-weight:800;
+      box-shadow:0 6px 14px rgba(247,181,0,.35);
+    }
+    .btn:focus-visible{outline:3px solid #1f4e8c33}
+    .btn:hover{filter:brightness(.98)}
+    @media (max-width:720px){
+      .notice-title{font-size:30px}
+      .card{flex-direction:column;align-items:flex-start}
+      .btn{width:100%;text-align:center}
+    }
+  </style>
+</head>
+<body>
+  <!-- Simple top links row -->
+  <div class="topbar">
+    <a href="#">NOTICE</a>
+    <a href="#">RESULTS</a>
+    <a href="#">CAREER</a>
+    <span class="chip">UPTAC-2025</span>
+  </div>
+
+  <!-- Brand header -->
+  <header>
+    <div class="brand">
+      <div class="logo">SR</div>
+      <div>
+        <h1>SHRI RAMSWAROOP</h1>
+        <small>Memorial College of Engineering &amp; Management</small>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <div class="notice-title">
+      <span class="bar"></span>
+      <span>Notice</span>
+    </div>
+
+    <p class="lead">
+      SRMCEM understands the importance of clear, timely communication in keeping its academic community well-informed.
+    </p>
+
+    <section class="copy" aria-label="Notice details">
+      <p>University notices play a key role in updating students, faculty, and staff about academic schedules, exams, campus events, admissions, and administrative updates, ensuring transparency and responsiveness.</p>
+      <p>Whether posted on physical notice boards or shared digitally through the college portal and emails, SRMCEM uses these notices to keep everyone informed and engaged. By regularly updating these communication channels, the college ensures that its community stays ahead of deadlines and actively participates in academic and extracurricular activities, contributing to the smooth functioning of the campus.</p>
+    </section>
+
+    <article class="card" role="article" aria-labelledby="notice-bus-pass">
+      <div>
+        <h2 id="notice-bus-pass">Notice: Regarding Bus Pass (Session 2025-26)</h2>
+        <p>Click below to view the full notice.</p>
+      </div>
+      <a class="btn" href="#" aria-label="View Notice">View Notice</a>
+    </article>
+  </main>
+</body>
+</html>

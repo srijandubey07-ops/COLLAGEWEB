@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRMGPC Campus Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://srmcem.ac.in/wp-content/uploads/2023/07/campus-building.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Header */
+    .header {
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+    .header h1 {
+      font-size: 20px;
+      color: #b30000;
+      margin: 0;
+      line-height: 1.2;
+    }
+    .header span {
+      font-size: 14px;
+      color: #444;
+    }
+
+    /* Login Box */
+    .login-box {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 25px;
+      border-radius: 8px;
+      width: 300px;
+      margin-top: 80px;
+      text-align: center;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    }
+    .login-box h2 {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #222;
+    }
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background: #17375e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .login-box button:hover {
+      background: #0f2642;
+    }
+    .login-box a {
+      display: block;
+      margin-top: 15px;
+      font-size: 13px;
+      color: #000;
+      text-decoration: none;
+    }
+    .login-box a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="images.jpg" alt="SRMGPC Logo">
+    <div>
+      <h1>SHRI RAMSWAROOP</h1>
+      <span>MEMORIAL GROUP OF PROFESSIONAL COLLEGES</span>
+    </div>
+  </div>
+
+  <!-- Login Box -->
+  <div class="login-box">
+    <h2>SRMGPC CAMPUS PORTAL</h2>
+    <form>
+      <input type="text" placeholder="User ID" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">SIGN IN</button>
+      <a href="#">Forgot Password</a>
+    </form>
+  </div>
+
+</body>
+</html>

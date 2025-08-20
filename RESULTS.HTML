@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AKTU ERP Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #dfe9f3, #ffffff);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+      width: 350px;
+      text-align: center;
+    }
+    .login-box img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+    .login-box h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #800000;
+    }
+    input[type="text"], input[type="date"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .login-btn {
+      width: 100%;
+      padding: 10px;
+      background: #800000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .login-btn:hover {
+      background: #600000;
+    }
+    .footer {
+      font-size: 12px;
+      margin-top: 15px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <!-- University Logo -->
+    <img src="images.png" alt="AKTU Logo">
+    
+    <!-- Title -->
+    <h2>ऐकेटीयू वन्व्यू</h2>
+    
+    <!-- Input Fields -->
+    <form>
+      <input type="text" placeholder="Roll Number / Enrollment No" required>
+      <input type="date" placeholder="Date of Birth" required>
+      
+      <!-- Captcha Placeholder -->
+      <div style="margin:10px 0; border:1px solid #ddd; padding:10px; border-radius:5px;">
+        <input type="checkbox"> I'm not a robot
+      </div>
+      
+      <!-- Button -->
+      <button type="submit" class="login-btn">खोजें</button>
+    </form>
+    
+    <!-- Footer -->
+    <div class="footer">
+      यह ई आर पी डॉ ए पी जे अब्दुल कलाम तकनीकी विश्वविद्यालय लखनऊ की 
+      आधिकारिक ई आर पी पोर्टल है। <br>
+      (एनेटेक्नोगो-एससीसीआई द्वारा संचालित)
+    </div>
+  </div>
+</body>
+</html>
